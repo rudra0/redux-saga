@@ -20,7 +20,7 @@ const CounterDumb = ({ dataValue, onLogInAsync }) => {
 
   const logIn = (e) => {
     e.preventDefault();
-    if (otp == dataValue.verifyOtp) {
+    if (otp === dataValue.verifyOtp) {
       alert("success Login");
     } else {
       alert("failed Login");
@@ -79,7 +79,7 @@ const CounterDumb = ({ dataValue, onLogInAsync }) => {
 };
 
 const action = (type, data) => () => ({ type, data });
-export const Counter = connect((state) => ({ dataValue: state }), {
+export const LogIn = connect((state) => ({ dataValue: state }), {
   onLogIn: action(LOGIN, null),
   onLogInAsync: action(LOGINASYNC, data),
   otpRequest: action(LOGINOTPREQUEST, data),
