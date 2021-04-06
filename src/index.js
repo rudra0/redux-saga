@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import { Counter } from "./Counter";
+import { Counter } from "./Login";
 import { store } from "./init-store.js";
 import { Provider } from "react-redux";
 
